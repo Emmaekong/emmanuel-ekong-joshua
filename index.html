@@ -6,45 +6,50 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Emmanuel Ekong Joshua | Official Website</title>
-
-  <meta name="description" content="Discover the personal website, interests, projects and professional journey of Emmanuel Ekong Joshua.">
-
+  <meta name="description" content="Meet Emmanuel Ekong Joshua, Nigerian cybersecurity student, technology enthusiast and founder building projects and communities.">
   <meta name="author" content="Emmanuel Ekong Joshua">
   <meta name="robots" content="index, follow">
-  <meta name="theme-color" content="#101827">
 
   <style>
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
+      scroll-behavior: smooth;
     }
 
     body {
       font-family: Arial, sans-serif;
-      background: #101827;
-      color: #ffffff;
+      background: #0b1220;
+      color: #f8fafc;
       line-height: 1.7;
     }
 
     header {
-      padding: 22px 8%;
+      padding: 20px 8%;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      border-bottom: 1px solid #293449;
+      flex-wrap: wrap;
+      gap: 15px;
+      border-bottom: 1px solid #263449;
     }
 
     .logo {
-      font-size: 19px;
+      font-size: 20px;
       font-weight: bold;
       color: #60a5fa;
     }
 
+    nav {
+      display: flex;
+      gap: 18px;
+      flex-wrap: wrap;
+    }
+
     nav a {
-      color: #ffffff;
       text-decoration: none;
-      margin-left: 18px;
+      color: #cbd5e1;
       font-size: 14px;
     }
 
@@ -54,95 +59,124 @@
 
     .hero {
       min-height: 75vh;
+      padding: 100px 10%;
       display: flex;
       flex-direction: column;
       justify-content: center;
-      padding: 80px 10%;
       background: linear-gradient(135deg, #101827, #1e3a5f);
     }
 
-    .hero span {
+    .eyebrow {
       color: #60a5fa;
       font-weight: bold;
       letter-spacing: 2px;
     }
 
     h1 {
-      font-size: clamp(38px, 7vw, 68px);
+      font-size: clamp(40px, 8vw, 72px);
       line-height: 1.15;
       margin: 20px 0;
     }
 
     .hero p {
-      max-width: 600px;
+      max-width: 650px;
       color: #cbd5e1;
       font-size: 18px;
     }
 
     .button {
       display: inline-block;
-      margin-top: 28px;
+      width: fit-content;
       padding: 13px 25px;
       background: #2563eb;
       color: white;
       text-decoration: none;
       border-radius: 7px;
-      width: fit-content;
+      margin-top: 28px;
     }
 
     section {
-      padding: 75px 10%;
+      padding: 80px 10%;
     }
 
     h2 {
-      font-size: 32px;
-      margin-bottom: 20px;
       color: #60a5fa;
+      font-size: 32px;
+      margin-bottom: 22px;
     }
 
-    section p {
+    .intro {
+      max-width: 780px;
       color: #cbd5e1;
-      max-width: 750px;
     }
 
     .cards {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 20px;
-      margin-top: 30px;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 22px;
+      margin-top: 35px;
     }
 
     .card {
-      background: #1e293b;
-      padding: 25px;
-      border-radius: 12px;
+      padding: 28px;
+      background: #172337;
       border: 1px solid #334155;
+      border-radius: 13px;
     }
 
     .card h3 {
+      font-size: 23px;
       margin-bottom: 12px;
-      color: #ffffff;
+    }
+
+    .card p {
+      color: #cbd5e1;
+      font-size: 14px;
+    }
+
+    .status {
+      display: inline-block;
+      padding: 5px 11px;
+      background: #1e3a5f;
+      color: #93c5fd;
+      border-radius: 20px;
+      font-size: 11px;
+      margin-bottom: 15px;
+    }
+
+    .vision {
+      max-width: 800px;
+      padding: 30px;
+      border-left: 4px solid #3b82f6;
+      background: #172337;
+      border-radius: 8px;
+      color: #dbeafe;
+      font-size: 19px;
     }
 
     footer {
       text-align: center;
-      padding: 30px;
-      background: #0b1220;
+      padding: 35px 15px;
+      background: #080e19;
       color: #94a3b8;
+      font-size: 13px;
     }
 
-    @media (max-width: 600px) {
+    @media(max-width: 600px) {
       header {
         flex-direction: column;
-        gap: 15px;
       }
 
-      nav a {
-        margin: 0 7px;
+      nav {
+        justify-content: center;
       }
 
       .hero {
-        min-height: 65vh;
+        padding: 75px 8%;
+      }
+
+      section {
+        padding: 65px 8%;
       }
     }
   </style>
@@ -150,87 +184,129 @@
 
 <body>
 
-  <header>
-    <div class="logo">EMMANUEL EJ.</div>
+<header>
+  <div class="logo">EMMANUEL EJ.</div>
 
-    <nav>
-      <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#interests">Interests</a>
-    </nav>
-  </header>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#vision">Vision</a>
+  </nav>
+</header>
 
-  <main>
-    <div class="hero">
-      <span>WELCOME TO MY OFFICIAL WEBSITE</span>
+<main>
 
-      <h1>Emmanuel<br>Ekong Joshua</h1>
+  <div class="hero">
+    <span class="eyebrow">WELCOME TO MY PERSONAL WEBSITE</span>
 
-      <p>
-        Welcome to my personal corner of the internet.
-        Explore my interests, ideas, projects and journey
-        as I continue learning, creating and growing.
-      </p>
+    <h1>Emmanuel<br>Ekong Joshua</h1>
 
-      <a href="#about" class="button">Discover More →</a>
-    </div>
+    <p>
+      Cybersecurity student, technology enthusiast
+      and aspiring entrepreneur passionate about
+      building ideas into solutions that matter.
+    </p>
 
-    <section id="about">
-      <h2>About Me</h2>
+    <a href="#about" class="button">Explore My Journey →</a>
+  </div>
 
-      <p>
-        Hello! I'm Emmanuel Ekong Joshua.
-        This website is where I share my personal journey,
-        interests, projects and the things I am passionate about.
-        More details about my background and achievements
-        will be added as my journey develops.
-      </p>
-    </section>
+  <section id="about">
+    <h2>About Me</h2>
 
-    <section id="projects">
-      <h2>My Projects</h2>
+    <p class="intro">
+      My name is Emmanuel Ekong Joshua, a Nigerian
+      cybersecurity student at the University of Uyo.
 
-      <p>
-        A collection of ideas, projects and creative work.
-      </p>
+      I am passionate about technology, innovation
+      and building solutions to real-world problems.
 
-      <div class="cards">
-        <div class="card">
-          <h3>Project One</h3>
-          <p>Details about my first project will appear here.</p>
-        </div>
+      I believe technology is most powerful when it
+      is used to make life easier, solve challenges
+      and create meaningful opportunities.
 
-        <div class="card">
-          <h3>Project Two</h3>
-          <p>Details about another project will appear here.</p>
-        </div>
+      My interests include cybersecurity, software
+      development, entrepreneurship and exploring
+      new ideas.
 
-        <div class="card">
-          <h3>Future Projects</h3>
-          <p>More exciting work coming soon.</p>
-        </div>
+      I enjoy learning, experimenting with code and
+      turning ideas into practical projects.
+
+      My ambition is to become a technology innovator
+      who builds useful products, creates opportunities
+      and makes a meaningful impact through technology.
+    </p>
+  </section>
+
+  <section id="projects">
+    <h2>Projects & Ventures</h2>
+
+    <p class="intro">
+      A collection of projects, ideas and ventures
+      that represent my interest in technology,
+      entrepreneurship and innovation.
+    </p>
+
+    <div class="cards">
+
+      <div class="card">
+        <span class="status">ACTIVE PROJECT</span>
+        <h3>OralCode</h3>
+        <p>
+          A working project currently under development.
+          More information about its purpose and features
+          will be shared when the time is right.
+        </p>
       </div>
-    </section>
 
-    <section id="interests">
-      <h2>My Interests</h2>
+      <div class="card">
+        <span class="status">COMMUNITY PROJECT</span>
+        <h3>FounderShift</h3>
+        <p>
+          A community designed to bring businesses,
+          funders and entrepreneurs together to connect,
+          discover opportunities and build meaningful
+          relationships.
+        </p>
+      </div>
 
-      <p>
-        Technology, innovation, learning, creativity
-        and building meaningful projects.
-      </p>
-    </section>
-  </main>
+      <div class="card">
+        <span class="status">FUTURE PROJECT</span>
+        <h3>EK Transport</h3>
+        <p>
+          A future transportation venture currently
+          in the planning stage. More details will
+          be revealed as the idea develops.
+        </p>
+      </div>
 
-  <footer>
-    <p>© <span id="year"></span> Emmanuel Ekong Joshua.</p>
-    <p>All rights reserved.</p>
-  </footer>
+    </div>
+  </section>
 
-  <script>
-    document.getElementById("year").textContent =
-      new Date().getFullYear();
-  </script>
+  <section id="vision">
+    <h2>My Vision</h2>
+
+    <div class="vision">
+      "I believe great ideas begin with curiosity,
+      but real impact comes from building. I want
+      to learn, create and turn problems into
+      opportunities through technology."
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p>
+    © <span id="year"></span>
+    Emmanuel Ekong Joshua. All rights reserved.
+  </p>
+  <p>Built with curiosity and a passion for innovation.</p>
+</footer>
+
+<script>
+  document.getElementById("year").textContent =
+    new Date().getFullYear();
+</script>
 
 </body>
 </html>
