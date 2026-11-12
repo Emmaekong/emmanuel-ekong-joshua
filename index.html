@@ -1,0 +1,236 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Emmanuel Ekong Joshua | Official Website</title>
+
+  <meta name="description" content="Discover the personal website, interests, projects and professional journey of Emmanuel Ekong Joshua.">
+
+  <meta name="author" content="Emmanuel Ekong Joshua">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#101827">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #101827;
+      color: #ffffff;
+      line-height: 1.7;
+    }
+
+    header {
+      padding: 22px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #293449;
+    }
+
+    .logo {
+      font-size: 19px;
+      font-weight: bold;
+      color: #60a5fa;
+    }
+
+    nav a {
+      color: #ffffff;
+      text-decoration: none;
+      margin-left: 18px;
+      font-size: 14px;
+    }
+
+    nav a:hover {
+      color: #60a5fa;
+    }
+
+    .hero {
+      min-height: 75vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 80px 10%;
+      background: linear-gradient(135deg, #101827, #1e3a5f);
+    }
+
+    .hero span {
+      color: #60a5fa;
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
+
+    h1 {
+      font-size: clamp(38px, 7vw, 68px);
+      line-height: 1.15;
+      margin: 20px 0;
+    }
+
+    .hero p {
+      max-width: 600px;
+      color: #cbd5e1;
+      font-size: 18px;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 28px;
+      padding: 13px 25px;
+      background: #2563eb;
+      color: white;
+      text-decoration: none;
+      border-radius: 7px;
+      width: fit-content;
+    }
+
+    section {
+      padding: 75px 10%;
+    }
+
+    h2 {
+      font-size: 32px;
+      margin-bottom: 20px;
+      color: #60a5fa;
+    }
+
+    section p {
+      color: #cbd5e1;
+      max-width: 750px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .card {
+      background: #1e293b;
+      padding: 25px;
+      border-radius: 12px;
+      border: 1px solid #334155;
+    }
+
+    .card h3 {
+      margin-bottom: 12px;
+      color: #ffffff;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      background: #0b1220;
+      color: #94a3b8;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+        gap: 15px;
+      }
+
+      nav a {
+        margin: 0 7px;
+      }
+
+      .hero {
+        min-height: 65vh;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">EMMANUEL EJ.</div>
+
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#interests">Interests</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="hero">
+      <span>WELCOME TO MY OFFICIAL WEBSITE</span>
+
+      <h1>Emmanuel<br>Ekong Joshua</h1>
+
+      <p>
+        Welcome to my personal corner of the internet.
+        Explore my interests, ideas, projects and journey
+        as I continue learning, creating and growing.
+      </p>
+
+      <a href="#about" class="button">Discover More →</a>
+    </div>
+
+    <section id="about">
+      <h2>About Me</h2>
+
+      <p>
+        Hello! I'm Emmanuel Ekong Joshua.
+        This website is where I share my personal journey,
+        interests, projects and the things I am passionate about.
+        More details about my background and achievements
+        will be added as my journey develops.
+      </p>
+    </section>
+
+    <section id="projects">
+      <h2>My Projects</h2>
+
+      <p>
+        A collection of ideas, projects and creative work.
+      </p>
+
+      <div class="cards">
+        <div class="card">
+          <h3>Project One</h3>
+          <p>Details about my first project will appear here.</p>
+        </div>
+
+        <div class="card">
+          <h3>Project Two</h3>
+          <p>Details about another project will appear here.</p>
+        </div>
+
+        <div class="card">
+          <h3>Future Projects</h3>
+          <p>More exciting work coming soon.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="interests">
+      <h2>My Interests</h2>
+
+      <p>
+        Technology, innovation, learning, creativity
+        and building meaningful projects.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> Emmanuel Ekong Joshua.</p>
+    <p>All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent =
+      new Date().getFullYear();
+  </script>
+
+</body>
+</html>
