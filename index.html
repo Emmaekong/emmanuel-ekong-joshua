@@ -6,9 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Emmanuel Ekong Joshua | Official Website</title>
-  <meta name="description" content="Meet Emmanuel Ekong Joshua, Nigerian cybersecurity student, technology enthusiast and founder building projects and communities.">
+
+  <meta name="description" content="The official website of Emmanuel Ekong Joshua, Nigerian cybersecurity student, technology enthusiast and aspiring entrepreneur.">
   <meta name="author" content="Emmanuel Ekong Joshua">
   <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#0b1220">
+
+  <link rel="canonical" href="https://emmaekong.github.io/emmanuel-ekong-joshua/">
 
   <style>
     * {
@@ -33,6 +37,7 @@
       flex-wrap: wrap;
       gap: 15px;
       border-bottom: 1px solid #263449;
+      background: #101827;
     }
 
     .logo {
@@ -95,6 +100,10 @@
       margin-top: 28px;
     }
 
+    .button:hover {
+      background: #1d4ed8;
+    }
+
     section {
       padding: 80px 10%;
     }
@@ -122,6 +131,11 @@
       background: #172337;
       border: 1px solid #334155;
       border-radius: 13px;
+      transition: transform 0.2s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
     }
 
     .card h3 {
@@ -154,12 +168,37 @@
       font-size: 19px;
     }
 
+    .contact-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin-top: 25px;
+    }
+
+    .contact-links a {
+      display: inline-block;
+      padding: 12px 20px;
+      border: 1px solid #3b82f6;
+      border-radius: 8px;
+      color: #93c5fd;
+      text-decoration: none;
+    }
+
+    .contact-links a:hover {
+      background: #1e3a5f;
+    }
+
     footer {
       text-align: center;
       padding: 35px 15px;
       background: #080e19;
       color: #94a3b8;
       font-size: 13px;
+    }
+
+    footer a {
+      color: #60a5fa;
+      text-decoration: none;
     }
 
     @media(max-width: 600px) {
@@ -191,6 +230,7 @@
     <a href="#about">About</a>
     <a href="#projects">Projects</a>
     <a href="#vision">Vision</a>
+    <a href="#contact">Contact</a>
   </nav>
 </header>
 
@@ -242,7 +282,7 @@
 
     <p class="intro">
       A collection of projects, ideas and ventures
-      that represent my interest in technology,
+      representing my interests in technology,
       entrepreneurship and innovation.
     </p>
 
@@ -275,7 +315,7 @@
         <p>
           A future transportation venture currently
           in the planning stage. More details will
-          be revealed as the idea develops.
+          be shared as the idea develops.
         </p>
       </div>
 
@@ -293,6 +333,25 @@
     </div>
   </section>
 
+  <section id="contact">
+    <h2>Connect With Me</h2>
+
+    <p class="intro">
+      Interested in technology, entrepreneurship
+      or meaningful collaborations? Connect with me
+      through my professional profile.
+    </p>
+
+    <div class="contact-links">
+      <a
+        href="https://www.linkedin.com/in/emmanuel-ekong-b43450319"
+        target="_blank"
+        rel="noopener noreferrer">
+        LinkedIn Profile →
+      </a>
+    </div>
+  </section>
+
 </main>
 
 <footer>
@@ -300,7 +359,10 @@
     © <span id="year"></span>
     Emmanuel Ekong Joshua. All rights reserved.
   </p>
-  <p>Built with curiosity and a passion for innovation.</p>
+
+  <p>
+    Built with curiosity and a passion for innovation.
+  </p>
 </footer>
 
 <script>
